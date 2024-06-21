@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_backgd"
+    tools:context=".ConnectingBackAngelDeviceActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_app_logo_splash" />
+
+        <ImageView
+            android:id="@+id/logo_text"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_app_logo_text_splash" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lay_device_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="user"
+            android:fontFamily="cursive"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+
+            android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_device_img" />
+
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/ic_make_sure_connect_text_down" />
+
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_Connecting"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_eff_blue_button"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_btn_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:text="Connecting ..."
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="-450dp"
+            android:layout_marginRight="-80dp"
+            android:rotation="40"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/ic_search_device" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lott_connect_state"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-110dp"
+            android:layout_marginRight="-50dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/ic_blue_dot"/>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginRight="38dp"
+            android:rotation="5"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/ic_red_dot" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginRight="25dp"
+            android:rotation="5"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/ic_blue_dot" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_demo"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/ic_btn_demo"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>
